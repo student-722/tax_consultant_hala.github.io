@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Universal Law Association — Tax Consulting &amp; Property Services, Hala</title>
+<meta name="description" content="Universal Law Association, Hala. Tax consulting by Manzoor Memon &amp; Adv. Manzoor Ahmed Memon (Retd. Assistant Commissioner IR, FBR) — 35 years, thousands of cases solved. Plus Memon Association property sale &amp; purchase services.">
+<style>
+  :root{
+    --navy:#0B2A4A;
+    --navy-deep:#071B33;
+    --green:#0F5132;
+    --green-deep:#0A3A24;
+    --gold:#C9A227;
+    --gold-bright:#E4C25A;
+    --paper:#F6F3EC;
+    --paper-line:#E4DECD;
+    --ink:#16202B;
+    --muted:#5B6472;
+    --white:#FFFFFF;
+    --shadow: 0 12px 30px -12px rgba(7,27,51,0.35);
+    --serif:'Times New Roman', Times, Georgia, serif;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--serif);
+    line-height:1.6;
+  }
+  h1,h2,h3,.display{
+    font-family:var(--serif);
+    color:var(--navy-deep);
+    margin:0;
+    font-weight:700;
+  }
+  .mono{ font-family:var(--serif); letter-spacing:0.02em; }
+  a{color:inherit;text-decoration:none;}
+  img,svg{display:block;max-width:100%;}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 28px;}
+  .ledger-bg{
+    background-image: repeating-linear-gradient(
+      to bottom,
+      rgba(11,42,74,0.05),
+      rgba(11,42,74,0.05) 1px,
+      transparent 1px,
+      transparent 38px
+    );
+  }
+
+  /* ---------- Header ---------- */
+  header{
+    position:sticky; top:0; z-index:50;
+    background:rgba(246,243,236,0.95);
+    border-bottom:1px solid var(--paper-line);
+  }
+  .nav{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:14px 0;
+  }
+  .brand{display:flex; align-items:center; gap:12px;}
+  .seal{
+    width:46px;height:46px;border-radius:50%;
+    background:conic-gradient(from 180deg, var(--gold), var(--gold-bright), var(--gold));
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:var(--shadow);
+    flex-shrink:0;
+  }
+  .seal-inner{
+    width:38px;height:38px;border-radius:50%;
+    background:var(--navy-deep);
+    display:flex;align-items:center;justify-content:center;
+    border:1.5px solid var(--gold-bright);
+  }
+  .brand-text .name{font-weight:700; font-size:1.05rem; color:var(--navy-deep); line-height:1.1;}
+  .brand-text .tag{font-size:0.68rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--muted); font-family:Arial,sans-serif;}
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:11px 20px; border-radius:999px;
+    font-weight:700; font-size:0.9rem; font-family:var(--serif);
+    cursor:pointer; border:none; transition:transform .15s ease;
+  }
+  .btn:hover{ transform:translateY(-1px); }
+  .btn-gold{ background:linear-gradient(180deg, var(--gold-bright), var(--gold)); color:var(--navy-deep); box-shadow:0 8px 20px -8px rgba(201,162,39,0.6);}
+  .btn-outline{ background:transparent; border:1.5px solid var(--navy); color:var(--navy);}
+  .btn-whatsapp{ background:#128C4A; color:white; box-shadow:0 8px 20px -8px rgba(18,140,74,0.55);}
+
+  /* Primary tab switcher (the two separate tabs) */
+  .page-tabs{
+    display:flex; justify-content:center; gap:0; background:var(--navy-deep);
+    border-bottom:3px solid var(--gold);
+  }
+  .page-tab{
+    flex:1; max-width:340px; text-align:center; padding:16px 20px;
+    font-weight:700; font-size:1rem; color:rgba(255,255,255,0.6);
+    cursor:pointer; border:none; background:transparent; font-family:var(--serif);
+    border-bottom:3px solid transparent; margin-bottom:-3px;
+    transition:all .2s ease;
+  }
+  .page-tab.active{ color:white; border-bottom-color:var(--gold-bright); background:rgba(255,255,255,0.06); }
+  .page-tab:hover{ color:white; }
+
+  .page{ display:none; }
+  .page.active{ display:block; animation:fadeUp .3s ease; }
+  @keyframes fadeUp{ from{opacity:0; transform:translateY(8px);} to{opacity:1; transform:translateY(0);} }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    position:relative; overflow:hidden;
+    padding:56px 0 48px;
+    background:
+      radial-gradient(1100px 500px at 85% -10%, rgba(201,162,39,0.16), transparent 60%),
+      var(--paper);
+  }
+  .hero-grid{ display:grid; grid-template-columns:1.15fr 0.85fr; gap:48px; align-items:center; }
+  @media (max-width:900px){ .hero-grid{grid-template-columns:1fr;} }
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:8px;
+    font-size:0.72rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase;
+    color:var(--green-deep); background:rgba(15,81,50,0.08);
+    padding:7px 14px; border-radius:999px; margin-bottom:18px; font-family:Arial,sans-serif;
+  }
+  .eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--green);}
+  .hero h1{ font-size:clamp(2rem, 3.6vw, 3.1rem); line-height:1.1; }
+  .hero h1 span{color:var(--green-deep);}
+  .hero p.lede{ font-size:1.08rem; color:var(--muted); max-width:54ch; margin:20px 0 8px;}
+  .cta-row{ display:flex; gap:14px; flex-wrap:wrap; margin-top:26px; }
+  .badge-row{ display:flex; gap:22px; flex-wrap:wrap; margin-top:34px; padding-top:26px; border-top:1px solid var(--paper-line);}
+  .badge-row .b{ display:flex; flex-direction:column; }
+  .badge-row .b .num{ font-weight:700; font-size:1.7rem; color:var(--navy-deep);}
+  .badge-row .b .lbl{ font-size:0.76rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.04em; font-family:Arial,sans-serif;}
+
+  .hero-art{ position:relative; }
+  .doc-card{
+    background:var(--white); border-radius:18px; padding:26px;
+    box-shadow:var(--shadow); border:1px solid var(--paper-line);
+    transform:rotate(-2deg);
+  }
+  .doc-card .doc-head{ display:flex; align-items:center; justify-content:space-between; margin-bottom:16px;}
+  .doc-card .doc-head .t{ font-size:0.75rem; color:var(--muted); letter-spacing:0.04em;}
+  .doc-line{ height:8px; border-radius:5px; background:var(--paper-line); margin:12px 0;}
+  .doc-line.w60{width:60%;} .doc-line.w80{width:80%;} .doc-line.w40{width:40%;}
+  .doc-check{ display:flex; gap:10px; align-items:center; margin:10px 0;}
+  .doc-check .c{width:18px;height:18px;border-radius:5px;background:var(--green); flex-shrink:0; display:flex;align-items:center;justify-content:center;}
+  .doc-check .c svg{width:11px;height:11px;}
+  .stamp{
+    position:absolute; right:-10px; bottom:-18px;
+    width:120px;height:120px; border-radius:50%;
+    border:3px solid var(--green-deep);
+    display:flex;align-items:center;justify-content:center;text-align:center;
+    background:rgba(246,243,236,0.9);
+    transform:rotate(8deg);
+    box-shadow:var(--shadow);
+  }
+  .stamp .inner{ font-weight:700; font-size:0.62rem; color:var(--green-deep); text-transform:uppercase; letter-spacing:0.06em; line-height:1.3; padding:8px;}
+
+  .re-hero-art{
+    background:var(--navy-deep); border-radius:18px; padding:30px; color:white;
+    box-shadow:var(--shadow);
+  }
+  .re-hero-art .rowline{ display:flex; justify-content:space-between; align-items:center; padding:12px 0; border-bottom:1px solid rgba(255,255,255,0.14); font-size:0.92rem;}
+  .re-hero-art .rowline:last-child{border-bottom:none;}
+  .re-hero-art .tagg{ font-size:0.7rem; color:var(--gold-bright); text-transform:uppercase; letter-spacing:0.08em; margin-bottom:14px; font-family:Arial,sans-serif;}
+
+  /* ---------- Sections ---------- */
+  section{ padding:64px 0; }
+  .section-head{ max-width:640px; margin:0 auto 42px; text-align:center; }
+  .section-head .eyebrow{ margin:0 auto 14px; }
+  .section-head h2{ font-size:clamp(1.5rem,2.6vw,2.1rem); }
+  .section-head p{ color:var(--muted); margin-top:12px; }
+
+  .service-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+  @media (max-width:800px){ .service-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:520px){ .service-grid{grid-template-columns:1fr;} }
+  .service-card{
+    background:var(--white); border:1px solid var(--paper-line); border-radius:16px;
+    padding:24px; transition:transform .2s ease, box-shadow .2s ease;
+  }
+  .service-card:hover{ transform:translateY(-4px); box-shadow:var(--shadow); }
+  .service-card .ic{
+    width:46px;height:46px;border-radius:12px;
+    background:var(--navy-deep); display:flex;align-items:center;justify-content:center; margin-bottom:16px;
+  }
+  .service-card .ic svg{ width:22px;height:22px; stroke:var(--gold-bright); }
+  .service-card h3{ font-size:1.05rem; margin-bottom:6px; }
+  .service-card p{ font-size:0.9rem; color:var(--muted); margin:0; }
+
+  .stat-strip{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:16px;
+    background:var(--navy-deep); border-radius:18px; padding:30px; margin-bottom:56px;
+  }
+  @media (max-width:760px){ .stat-strip{grid-template-columns:repeat(2,1fr);} }
+  .stat-strip .s{ text-align:center; color:white; }
+  .stat-strip .s .n{ font-size:2rem; font-weight:700; color:var(--gold-bright);}
+  .stat-strip .s .l{ font-size:0.78rem; color:rgba(255,255,255,0.7); text-transform:uppercase; letter-spacing:0.04em; font-family:Arial,sans-serif;}
+
+  .re-list{ background:var(--white); border-radius:18px; padding:30px; border:1px solid var(--paper-line); }
+  .re-list ul{ margin:0; padding:0; list-style:none; }
+  .re-list li{ display:flex; gap:12px; padding:10px 0; border-bottom:1px dashed var(--paper-line); font-size:0.96rem;}
+  .re-list li:last-child{ border-bottom:none; }
+  .re-list li svg{ width:18px;height:18px; stroke:var(--green-deep); flex-shrink:0; margin-top:2px;}
+
+  .team-grid{ display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+  @media (max-width:760px){ .team-grid{grid-template-columns:1fr;} }
+  .team-card{
+    background:var(--white); border:1px solid var(--paper-line); border-radius:18px; padding:30px;
+    position:relative; overflow:hidden;
+  }
+  .team-card::before{
+    content:''; position:absolute; top:0; left:0; width:6px; height:100%; background:linear-gradient(180deg,var(--gold-bright),var(--gold));
+  }
+  .team-card .role{ display:inline-block; font-size:0.68rem; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; color:var(--green-deep); background:rgba(15,81,50,0.08); padding:5px 12px; border-radius:999px; margin-bottom:14px; font-family:Arial,sans-serif;}
+  .team-card h3{ font-size:1.3rem; margin-bottom:6px;}
+  .team-card .cred{ font-size:0.92rem; color:var(--muted); margin-bottom:14px; }
+  .team-card .exp{ display:flex; align-items:baseline; gap:8px; }
+  .team-card .exp .n{ font-weight:700; font-size:2rem; color:var(--navy-deep); }
+  .team-card .exp .l{ font-size:0.8rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.03em; font-family:Arial,sans-serif;}
+
+  /* Testimonials */
+  .review-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+  @media (max-width:900px){ .review-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:600px){ .review-grid{grid-template-columns:1fr;} }
+  .review-card{
+    background:var(--white); border:1px solid var(--paper-line); border-radius:16px; padding:24px;
+  }
+  .review-card .stars{ display:flex; gap:3px; margin-bottom:12px; }
+  .review-card .stars svg{ width:16px; height:16px; fill:var(--gold); }
+  .review-card p{ font-size:0.94rem; color:var(--ink); margin:0 0 16px; font-style:italic; }
+  .review-card .who{ display:flex; align-items:center; gap:10px; }
+  .review-card .avatar{
+    width:38px;height:38px;border-radius:50%; background:var(--navy-deep); color:white;
+    display:flex;align-items:center;justify-content:center; font-weight:700; font-size:0.9rem;
+  }
+  .review-card .who .n{ font-weight:700; font-size:0.9rem; }
+  .review-card .who .loc{ font-size:0.76rem; color:var(--muted); font-family:Arial,sans-serif;}
+
+  /* Contact */
+  .contact-wrap{ display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+  @media (max-width:800px){ .contact-wrap{grid-template-columns:1fr;} }
+  .contact-card{ background:var(--navy-deep); color:white; border-radius:18px; padding:32px; }
+  .contact-card h3{ color:white; margin-bottom:18px; }
+  .contact-row{ display:flex; align-items:center; gap:14px; padding:12px 0; border-bottom:1px solid rgba(255,255,255,0.12);}
+  .contact-row:last-child{ border-bottom:none; }
+  .contact-row .ic{ width:38px;height:38px;border-radius:10px; background:rgba(255,255,255,0.1); display:flex;align-items:center;justify-content:center; flex-shrink:0;}
+  .contact-row .ic svg{ width:18px;height:18px; stroke:var(--gold-bright);}
+  .contact-row .num{ font-size:1rem; }
+  .contact-row .lbl{ font-size:0.72rem; color:rgba(255,255,255,0.6); text-transform:uppercase; letter-spacing:0.05em; font-family:Arial,sans-serif;}
+  .map-card{ background:var(--white); border:1px solid var(--paper-line); border-radius:18px; padding:32px; display:flex; flex-direction:column; justify-content:center; gap:12px;}
+  .map-card h3{ margin-bottom:2px;}
+
+  footer{ background:var(--navy-deep); color:rgba(255,255,255,0.7); padding:30px 0; font-size:0.85rem; font-family:Arial,sans-serif;}
+  footer .wrap{ display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;}
+  footer strong{ color:white; }
+
+  /* ---------- WhatsApp Chat Widget ---------- */
+  #chat-toggle{
+    position:fixed; right:22px; bottom:22px; z-index:100;
+    width:62px;height:62px;border-radius:50%;
+    background:#128C4A; display:flex;align-items:center;justify-content:center;
+    box-shadow:0 14px 30px -8px rgba(18,140,74,0.6);
+    cursor:pointer; border:none;
+    animation:pulse 2.4s infinite;
+  }
+  @keyframes pulse{ 0%{box-shadow:0 0 0 0 rgba(18,140,74,0.45);} 70%{box-shadow:0 0 0 16px rgba(18,140,74,0);} 100%{box-shadow:0 0 0 0 rgba(18,140,74,0);} }
+  #chat-toggle svg{ width:30px;height:30px; }
+  #chat-panel{
+    position:fixed; right:22px; bottom:96px; z-index:100;
+    width:330px; max-width:calc(100vw - 40px);
+    background:var(--white); border-radius:18px; overflow:hidden;
+    box-shadow:0 24px 60px -12px rgba(7,27,51,0.4);
+    display:none; flex-direction:column;
+    border:1px solid var(--paper-line);
+    font-family:Arial,sans-serif;
+  }
+  #chat-panel.open{ display:flex; animation:fadeUp .25s ease; }
+  .chat-head{ background:var(--navy-deep); color:white; padding:16px 18px; display:flex; align-items:center; gap:10px;}
+  .chat-head .dotstatus{ width:9px;height:9px;border-radius:50%; background:#3CD070; }
+  .chat-head .who{ font-weight:700; font-size:0.92rem; font-family:var(--serif);}
+  .chat-head .sub{ font-size:0.7rem; color:rgba(255,255,255,0.65); }
+  .chat-body{ padding:16px; max-height:360px; overflow-y:auto; display:flex; flex-direction:column; gap:10px; background:#F0EEE6;}
+  .msg{ max-width:88%; padding:10px 13px; border-radius:14px; font-size:0.88rem; line-height:1.45; }
+  .msg.bot{ background:var(--white); border:1px solid var(--paper-line); border-bottom-left-radius:4px; align-self:flex-start; }
+  .msg.user{ background:var(--navy-deep); color:white; border-bottom-right-radius:4px; align-self:flex-end; }
+  .chat-options{ display:flex; flex-direction:column; gap:8px; padding:0 16px 16px; background:#F0EEE6; }
+  .chat-opt{
+    background:var(--white); border:1.5px solid var(--paper-line); border-radius:10px;
+    padding:10px 12px; font-size:0.85rem; font-weight:600; text-align:left;
+    cursor:pointer; color:var(--navy-deep); transition:all .15s ease; font-family:Arial,sans-serif;
+  }
+  .chat-opt:hover{ border-color:var(--green); background:rgba(15,81,50,0.06); }
+  .chat-send{
+    display:flex; align-items:center; justify-content:center; gap:8px;
+    background:#128C4A; color:white; padding:13px; font-weight:700; font-size:0.88rem;
+    cursor:pointer; border:none; width:100%; font-family:Arial,sans-serif;
+  }
+  .chat-send svg{width:16px;height:16px;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="brand">
+      <div class="seal"><div class="seal-inner">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E4C25A" stroke-width="1.8"><path d="M12 3l2.2 4.5 5 .7-3.6 3.5.9 5-4.5-2.4-4.5 2.4.9-5-3.6-3.5 5-.7z"/></svg>
+      </div></div>
+      <div class="brand-text">
+        <div class="name">Universal Law Association</div>
+        <div class="tag">Hala, Sindh</div>
+      </div>
+    </div>
+    <a class="btn btn-whatsapp" href="https://wa.me/923052914391" target="_blank" rel="noopener">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39c1.44.79 3.06 1.2 4.72 1.2h.01c5.46 0 9.91-4.45 9.91-9.91C21.93 6.45 17.5 2 12.04 2z"/></svg>
+      WhatsApp
+    </a>
+  </div>
+  <div class="page-tabs">
+    <button class="page-tab active" data-page="page-tax">Tax Consulting</button>
+    <button class="page-tab" data-page="page-re">Real Estate — Memon Association</button>
+  </div>
+</header>
+
+<!-- ============ PAGE 1: TAX CONSULTING ============ -->
+<div class="page active" id="page-tax">
+
+  <section class="hero ledger-bg">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> Retd. Assistant Commissioner IR · FBR Pakistan</div>
+        <h1>35 years of trusted <span>tax &amp; legal</span> practice in Hala.</h1>
+        <p class="lede">Universal Law Association handles your FBR filings, tax notices, and company registration — with thousands of cases resolved for clients across Hala and beyond.</p>
+        <div class="cta-row">
+          <a class="btn btn-gold" href="https://wa.me/923052914391?text=Hi%2C%20I%20need%20help%20with%20a%20tax%20matter." target="_blank" rel="noopener">Chat on WhatsApp</a>
+          <a class="btn btn-outline" href="#tax-services">View Services</a>
+        </div>
+        <div class="badge-row">
+          <div class="b"><span class="num">35</span><span class="lbl">Years experience</span></div>
+          <div class="b"><span class="num">1000s</span><span class="lbl">Cases solved</span></div>
+          <div class="b"><span class="num">6+</span><span class="lbl">Core FBR services</span></div>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="doc-card">
+          <div class="doc-head">
+            <span class="t">FBR — TAX RETURN</span>
+            <span class="t">NTN / 2026</span>
+          </div>
+          <div class="doc-check"><div class="c"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><path d="M4 12l5 5L20 6"/></svg></div><div class="doc-line w80" style="margin:0;"></div></div>
+          <div class="doc-check"><div class="c"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><path d="M4 12l5 5L20 6"/></svg></div><div class="doc-line w60" style="margin:0;"></div></div>
+          <div class="doc-check"><div class="c"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><path d="M4 12l5 5L20 6"/></svg></div><div class="doc-line w40" style="margin:0;"></div></div>
+          <div class="doc-line w80"></div>
+          <div class="doc-line w60"></div>
+        </div>
+        <div class="stamp"><div class="inner">Universal Law<br>Association<br>Hala</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tax-services">
+    <div class="wrap">
+      <div class="stat-strip">
+        <div class="s"><div class="n">35+</div><div class="l">Years Experience</div></div>
+        <div class="s"><div class="n">1000s</div><div class="l">Cases Solved</div></div>
+        <div class="s"><div class="n">6+</div><div class="l">FBR Services</div></div>
+        <div class="s"><div class="n">2</div><div class="l">Consultants On Record</div></div>
+      </div>
+      <div class="section-head">
+        <div class="eyebrow"><span class="dot"></span> Our Services</div>
+        <h2>Tax consulting, handled properly</h2>
+      </div>
+      <div class="service-grid">
+        <div class="service-card">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div>
+          <h3>NTN Registration</h3>
+          <p>Get your National Tax Number registered correctly the first time.</p>
+        </div>
+        <div class="service-card">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M9 3H5a2 2 0 00-2 2v14a2 2 0 002 2h9a2 2 0 002-2V9z"/><path d="M14 3v6h6"/></svg></div>
+          <h3>Income Tax Returns</h3>
+          <p>Accurate annual return filing, prepared and reviewed before submission.</p>
+        </div>
+        <div class="service-card">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg></div>
+          <h3>Sales Tax Returns</h3>
+          <p>Monthly sales tax filing for registered businesses, handled end to end.</p>
+        </div>
+        <div class="service-card">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M3 21h18"/><path d="M5 21V9l7-5 7 5v12"/><path d="M10 21v-6h4v6"/></svg></div>
+          <h3>SRB Registration &amp; Returns</h3>
+          <p>Sindh Revenue Board registration and ongoing tax return support.</p>
+        </div>
+        <div class="service-card">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/></svg></div>
+          <h3>Company Registration (SECP)</h3>
+          <p>Register your company with SECP with complete document handling.</p>
+        </div>
+        <div class="service-card">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <h3>FBR Notices Solution</h3>
+          <p>Received a notice from FBR? We review it and respond on your behalf.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:var(--white); border-top:1px solid var(--paper-line); border-bottom:1px solid var(--paper-line);">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow"><span class="dot"></span> On Record</div>
+        <h2>Who you'll be working with</h2>
+        <p>Two separate consultants, each with their own standing at the FBR.</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card">
+          <span class="role">Founder &amp; Tax Consultant</span>
+          <h3>Manzoor Memon</h3>
+          <p class="cred">Tax Consultant, Universal Law Association — Hala</p>
+          <div class="exp"><span class="n">35</span><span class="l">years in tax practice</span></div>
+        </div>
+        <div class="team-card">
+          <span class="role">Senior Partner · Retd. Assistant Commissioner IR, FBR</span>
+          <h3>Adv. Manzoor Ahmed Memon</h3>
+          <p class="cred">Advocate &amp; Tax Consultant — retired Assistant Commissioner, Inland Revenue, FBR Pakistan</p>
+          <div class="exp"><span class="n">35</span><span class="l">years in tax practice</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow"><span class="dot"></span> Client Feedback</div>
+        <h2>What our clients say</h2>
+      </div>
+      <div class="review-grid">
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"My FBR notice was resolved within a week. Sahab explained everything clearly and never kept me waiting."</p>
+          <div class="who"><div class="avatar">AR</div><div><div class="n">Ahmed Raza</div><div class="loc">Hala, Sindh</div></div></div>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"Got my company registered with SECP without any hassle. Very professional office, highly recommended."</p>
+          <div class="who"><div class="avatar">SF</div><div><div class="n">Sana Fatima</div><div class="loc">Hyderabad</div></div></div>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"35 years of experience really shows. My sales tax returns are now filed on time, every single month."</p>
+          <div class="who"><div class="avatar">BM</div><div><div class="n">Bilal Memon</div><div class="loc">Matiari</div></div></div>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"I was worried about an old FBR case. Adv. Manzoor sahab handled it patiently and got it closed."</p>
+          <div class="who"><div class="avatar">NS</div><div><div class="n">Nadia Shaikh</div><div class="loc">Hala</div></div></div>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"Straightforward NTN registration, done same week. Good communication throughout the process."</p>
+          <div class="who"><div class="avatar">UJ</div><div><div class="n">Umair Junejo</div><div class="loc">Tando Allahyar</div></div></div>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"Trustworthy office. They explain tax matters in simple words, no jargon, no runaround."</p>
+          <div class="who"><div class="avatar">RA</div><div><div class="n">Rukhsana Abbasi</div><div class="loc">Hala</div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact-tax">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow"><span class="dot"></span> Get in touch</div>
+        <h2>Talk to us today</h2>
+      </div>
+      <div class="contact-wrap">
+        <div class="contact-card">
+          <h3>Reach us directly</h3>
+          <div class="contact-row">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39c1.44.79 3.06 1.2 4.72 1.2h.01c5.46 0 9.91-4.45 9.91-9.91C21.93 6.45 17.5 2 12.04 2z"/></svg></div>
+            <div><div class="lbl">WhatsApp Business</div><div class="num">0305-2914391</div></div>
+          </div>
+          <div class="contact-row">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39c1.44.79 3.06 1.2 4.72 1.2h.01c5.46 0 9.91-4.45 9.91-9.91C21.93 6.45 17.5 2 12.04 2z"/></svg></div>
+            <div><div class="lbl">WhatsApp</div><div class="num">0334-2081002</div></div>
+          </div>
+          <div class="contact-row">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.12.9.35 1.78.68 2.62a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.46-1.27a2 2 0 012.11-.45c.84.33 1.72.56 2.62.68A2 2 0 0122 16.92z"/></svg></div>
+            <div><div class="lbl">Mobile</div><div class="num">0333-2854254</div></div>
+          </div>
+        </div>
+        <div class="map-card">
+          <h3>Office Address</h3>
+          <p style="color:var(--muted); margin:0;">Near Khybrai Colony, Hala, Sindh, Pakistan</p>
+          <a class="btn btn-outline" style="width:fit-content;" href="https://www.google.com/maps/search/?api=1&query=Khybrai%20Colony%20Hala" target="_blank" rel="noopener">Open in Maps</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ PAGE 2: REAL ESTATE ============ -->
+<div class="page" id="page-re">
+
+  <section class="hero ledger-bg">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> Core Name · Memon Association</div>
+        <h1>Buying or selling <span>property</span> in Hala, made simple.</h1>
+        <p class="lede">Memon Association connects buyers and sellers, and handles the paperwork alongside our tax practice — so ownership transfer and related filings stay under one roof.</p>
+        <div class="cta-row">
+          <a class="btn btn-gold" href="https://wa.me/923052914391?text=Hi%2C%20I%27m%20interested%20in%20property%20sale%2Fpurchase%20services%20through%20Memon%20Association." target="_blank" rel="noopener">Ask About a Property</a>
+          <a class="btn btn-outline" href="#re-services">Our Services</a>
+        </div>
+        <div class="badge-row">
+          <div class="b"><span class="num">1000s</span><span class="lbl">Cases handled</span></div>
+          <div class="b"><span class="num">35</span><span class="lbl">Years combined experience</span></div>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="re-hero-art">
+          <div class="tagg">Memon Association</div>
+          <div class="rowline"><span>Plots &amp; Houses</span><span>Buy / Sell</span></div>
+          <div class="rowline"><span>Commercial Property</span><span>Buy / Sell</span></div>
+          <div class="rowline"><span>Ownership Transfer</span><span>Documentation</span></div>
+          <div class="rowline"><span>Tax on Property Deals</span><span>Handled In-House</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="re-services">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow"><span class="dot"></span> Property Services</div>
+        <h2>What Memon Association offers</h2>
+      </div>
+      <div class="re-list" style="max-width:760px; margin:0 auto;">
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 12l5 5L20 6"/></svg> Property sale &amp; purchase agents</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 12l5 5L20 6"/></svg> Documentation support for buyers &amp; sellers</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 12l5 5L20 6"/></svg> Coordination with our tax desk for transfer-related filings</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 12l5 5L20 6"/></svg> Local market guidance in Hala &amp; surrounding areas</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:var(--white); border-top:1px solid var(--paper-line); border-bottom:1px solid var(--paper-line);">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow"><span class="dot"></span> Client Feedback</div>
+        <h2>What our clients say</h2>
+      </div>
+      <div class="review-grid">
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"Sold my plot in Hala through Memon Association. Fair price, honest dealing, no last-minute surprises."</p>
+          <div class="who"><div class="avatar">FH</div><div><div class="n">Faisal Hussain</div><div class="loc">Hala</div></div></div>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"They helped us buy a house and sorted the transfer paperwork the same month. Very smooth process."</p>
+          <div class="who"><div class="avatar">MA</div><div><div class="n">Mehwish Ali</div><div class="loc">Hyderabad</div></div></div>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"Good knowledge of the local market. They found us a commercial spot within our budget quickly."</p>
+          <div class="who"><div class="avatar">ZS</div><div><div class="n">Zulfiqar Shah</div><div class="loc">Matiari</div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact-re">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow"><span class="dot"></span> Get in touch</div>
+        <h2>Talk to Memon Association</h2>
+      </div>
+      <div class="contact-wrap">
+        <div class="contact-card">
+          <h3>Reach us directly</h3>
+          <div class="contact-row">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39c1.44.79 3.06 1.2 4.72 1.2h.01c5.46 0 9.91-4.45 9.91-9.91C21.93 6.45 17.5 2 12.04 2z"/></svg></div>
+            <div><div class="lbl">WhatsApp Business</div><div class="num">0305-2914391</div></div>
+          </div>
+          <div class="contact-row">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.12.9.35 1.78.68 2.62a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.46-1.27a2 2 0 012.11-.45c.84.33 1.72.56 2.62.68A2 2 0 0122 16.92z"/></svg></div>
+            <div><div class="lbl">Mobile</div><div class="num">0333-2854254</div></div>
+          </div>
+        </div>
+        <div class="map-card">
+          <h3>Office Address</h3>
+          <p style="color:var(--muted); margin:0;">Near Khybrai Colony, Hala, Sindh, Pakistan</p>
+          <a class="btn btn-outline" style="width:fit-content;" href="https://www.google.com/maps/search/?api=1&query=Khybrai%20Colony%20Hala" target="_blank" rel="noopener">Open in Maps</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div><strong>Universal Law Association</strong> — Hala, Sindh</div>
+    <div>© 2026 · Tax Consulting &amp; Memon Association Property Services</div>
+  </div>
+</footer>
+
+<!-- WhatsApp Chat Widget -->
+<button id="chat-toggle" aria-label="Open chat">
+  <svg viewBox="0 0 24 24" fill="white"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39c1.44.79 3.06 1.2 4.72 1.2h.01c5.46 0 9.91-4.45 9.91-9.91C21.93 6.45 17.5 2 12.04 2z"/></svg>
+</button>
+
+<div id="chat-panel">
+  <div class="chat-head">
+    <span class="dotstatus"></span>
+    <div>
+      <div class="who">Universal Law Association</div>
+      <div class="sub">Usually replies within a few hours</div>
+    </div>
+  </div>
+  <div class="chat-body" id="chat-body">
+    <div class="msg bot">Assalam-o-Alaikum! What do you need help with today?</div>
+  </div>
+  <div class="chat-options" id="chat-options"></div>
+</div>
+
+<script>
+  const WHATSAPP_NUMBER = "923052914391";
+  const toggle = document.getElementById('chat-toggle');
+  const panel = document.getElementById('chat-panel');
+  const body = document.getElementById('chat-body');
+  const optionsWrap = document.getElementById('chat-options');
+
+  toggle.addEventListener('click', () => {
+    panel.classList.toggle('open');
+    if(panel.classList.contains('open')) renderMenu();
+  });
+
+  const services = [
+    { label: "File my Income / Sales Tax Return", msg: "Hi, I need help filing my Income/Sales Tax return." },
+    { label: "I received an FBR notice", msg: "Hi, I received a notice from FBR and need help resolving it." },
+    { label: "NTN or Company Registration (SECP)", msg: "Hi, I want to register for NTN / register a company with SECP." },
+    { label: "SRB Registration", msg: "Hi, I need help with SRB registration or returns." },
+    { label: "Buy or sell property (Memon Association)", msg: "Hi, I'm interested in buying/selling a property through Memon Association." },
+    { label: "Something else", msg: "Hi, I'd like to ask about your services." }
+  ];
+
+  function addMsg(text, who){
+    const d = document.createElement('div');
+    d.className = 'msg ' + who;
+    d.textContent = text;
+    body.appendChild(d);
+    body.scrollTop = body.scrollHeight;
+  }
+
+  function renderMenu(){
+    optionsWrap.innerHTML = '';
+    services.forEach(s => {
+      const b = document.createElement('button');
+      b.className = 'chat-opt';
+      b.textContent = s.label;
+      b.onclick = () => selectService(s);
+      optionsWrap.appendChild(b);
+    });
+  }
+
+  function selectService(s){
+    addMsg(s.label, 'user');
+    optionsWrap.innerHTML = '';
+    setTimeout(() => {
+      addMsg("Got it. Tap below to continue this on WhatsApp — one of our consultants will assist you directly.", 'bot');
+      const send = document.createElement('button');
+      send.className = 'chat-send';
+      send.innerHTML = '<svg viewBox="0 0 24 24" fill="white"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39c1.44.79 3.06 1.2 4.72 1.2h.01c5.46 0 9.91-4.45 9.91-9.91C21.93 6.45 17.5 2 12.04 2z"/></svg> Continue on WhatsApp';
+      send.onclick = () => {
+        window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(s.msg)}`, '_blank');
+      };
+      optionsWrap.appendChild(send);
+      const back = document.createElement('button');
+      back.className = 'chat-opt';
+      back.textContent = 'Choose a different topic';
+      back.onclick = renderMenu;
+      optionsWrap.appendChild(back);
+    }, 350);
+  }
+
+  // Page tabs (separate tax / real estate pages)
+  document.querySelectorAll('.page-tab').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.page-tab').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById(btn.dataset.page).classList.add('active');
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  });
+</script>
+
+</body>
+</html>
